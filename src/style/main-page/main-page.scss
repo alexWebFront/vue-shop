@@ -1,0 +1,16 @@
+.main {
+  background: $bg-color;
+  height: 100vh;
+  padding: 85px;
+
+  &__container {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 45px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.04);
+    background: $bg-container-color;
+    height: 100vh;
+  }
+}

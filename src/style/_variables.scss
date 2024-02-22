@@ -1,0 +1,23 @@
+// ADAPTIVE HELPERS
+@function get-vw($target) {
+  $vwContext: (360 * 0.01) * 1px;
+  @return (calc($target / $vwContext)) * 1vw;
+}
+
+//FONTS
+$fontInter: "Inter", sans-serif;
+
+//COLORS
+$bg-color: rgb(231, 246, 255);
+$bg-container-color: rgb(255, 255, 255);
+$white: #ffffff;
+$black: #000000;
+$gray: rgb(157, 157, 157);
+$gray-text: rgb(92, 92, 92);
+$gray-text-light: rgb(189, 189, 189);
+$light-green: rgb(165, 211, 100);
+$border-bottom: rgb(234, 234, 234);
+$search-border: rgb(243, 243, 243);
+$placeholder: rgb(196, 196, 196);
+
+
