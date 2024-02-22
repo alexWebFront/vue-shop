@@ -1,0 +1,31 @@
+//HELPERS
+@import "./_normilize.scss";
+@import "./_fonts.scss";
+@import "./_variables.scss";
+
+//LAYOUT
+@import "./header.scss";
+@import "./footer.scss";
+
+//MAIN PAGE
+@import "./main-page/main-page.scss";
+@import "./main-page/sneakers-list.scss";
+@import "./main-page/sneakers-item.scss";
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: $fontInter;
+}
+
+a{
+  text-decoration: none;
+}
