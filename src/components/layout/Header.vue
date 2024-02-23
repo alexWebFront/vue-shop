@@ -12,13 +12,17 @@
           </div>
         </div>
         <div class="header__menu">
-          <a href="#"
-             class="header__menu-link"
-             v-for="item in menuList"
-             :key="item"
-          >
-            <img class="header__menu-img" :src="item.img" :alt="item.title">
-            {{ item.title }}
+          <a href="#" class="header__menu-link">
+            <img class="header__menu-img" src="@/assets/images/cart.svg" alt="">
+            1205 руб.
+          </a>
+          <a href="#" class="header__menu-link" @click="changeBasketStatusHandler">
+            <img class="header__menu-img" src="@/assets/images/heart.svg" alt="">
+            Закладки
+          </a>
+          <a href="#" class="header__menu-link">
+            <img class="header__menu-img" src="@/assets/images/profile.svg" alt="">
+            Профиль
           </a>
         </div>
       </div>
@@ -27,29 +31,16 @@
 </template>
 
 <script>
+import {mapMutations} from "vuex";
+
 export default {
-  data() {
-    return {
-      price: 0,
-      menuList: [
-        {
-          title: "1205 руб.",
-          img: require("@/assets/images/cart.svg")
-        },
-        {
-          title: "Закладки",
-          img: require("@/assets/images/heart.svg")
-        },
-        {
-          title: "Профиль",
-          img: require("@/assets/images/profile.svg")
-        }
-      ]
-    }
+  methods: {
+    ...mapMutations(['changeBasketStatus', 'lockBodyScroll']),
+    changeBasketStatusHandler() {
+      this.changeBasketStatus();
+      this.lockBodyScroll();
+    },
+
   },
 }
 </script>
-
-<style lang="scss">
-
-</style>

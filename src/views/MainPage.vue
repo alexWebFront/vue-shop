@@ -3,6 +3,7 @@
     <div class="main__container">
       <Header/>
       <SneakersList/>
+      <Basket/>
       <Footer/>
     </div>
   </div>
@@ -12,8 +13,9 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import SneakersList from "@/components/main-page/SneakersList";
+import Basket from "@/components/basket/Basket";
 export default {
 
-  components: {SneakersList, Footer, Header}
+  components: {Basket, SneakersList, Footer, Header}
 }
 </script>

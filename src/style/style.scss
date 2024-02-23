@@ -12,6 +12,8 @@
 @import "./main-page/sneakers-list.scss";
 @import "./main-page/sneakers-item.scss";
 
+//BASKET
+@import "./basket/basket.scss";
 
 
 * {
@@ -22,10 +24,14 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: $fontInter;
+
+  &.locked {
+    overflow: hidden !important;
+  }
 }
 
-a{
+a {
   text-decoration: none;
 }
